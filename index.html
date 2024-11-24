@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMark</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+    <main>
+        <section id="home" class="">
+            <div class="container">
+                <div class="text-center py-5">
+                    <h1 class="display-4">Bookmarker</h1>
+                </div>
+                <div class="title d-flex align-items-center justify-content-center position-relative pt-4">
+                    <span class="title1 fs-3">
+                        <i class="fa-solid fa-bookmark"></i>
+                    </span>
+                    <h2 class="px-2">
+                        <span class="title1">Bookmark your</span> favorite sites
+                    </h2>
+                    <span class="icons fs-3">
+                        <i class="fa-solid fa-bookmark"></i>
+                    </span>
+                </div>
+                <div class="home-content py-4">
+                    <div class="name-input">
+                        <label for="Name" class="pb-3 fw-bold">
+                            <span class="pe-1">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </span>
+                            Site Name
+                        </label>
+                        <input   class="form-control " type="text"
+                            id="Name" placeholder="Bookmark Name" />
+                        <p id="msgName" class="alert alert-danger p-2 d-none">website name is not valid</p>
+                    </div>
+                    <div class="url-input">
+                        <label for="Url" class="py-3 fw-bold">
+                            <span class="pe-1"> <i class="fa-solid fa-link"></i> </span>
+                            Site URL
+                        </label>
+                        <input  class="form-control  mb-4" type="text"
+                            id="Url" placeholder="Website URL" />
+                        <p id="msgUrl" class="alert alert-danger p-2 d-none">website Url is not valid</p>
+
+                    </div>
+
+
+                    <div class="myButton d-flex justify-content-center position-relative">
+                        <button  class="btn btn-danger py-2 px-5 btn-sm mb-4">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <table class="table text-center mt-3">
+                    <thead>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="tableData">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- js file -->
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

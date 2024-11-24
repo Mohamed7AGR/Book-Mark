@@ -1,0 +1,33 @@
+h1 {
+  font-family: "Pacifico", "cursive";
+}
+h2 {
+  font-family: "Righteous", "cursive";
+}
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  background-color: #F7ECDE;
+}
+#home .title::before {
+  content: "";
+  border: 1px dashed #000;
+  width: 100%;
+  position: absolute;
+  bottom: 110%;
+  left: 0;
+}
+
+.myButton::after{
+    content: "";
+    border: 1px dashed #000;
+    width: 100%;
+    position: absolute;
+    top: 110%;
+    left: 0;
+}
+.title1{
+  color: #2ac054;
+}
+.title h2 , .icons{
+  color: #B3AC4A;
+}
